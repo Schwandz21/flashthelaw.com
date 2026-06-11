@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Flash The Law | Bar Exam Flashcards, Attack Outlines & Issue Spotting Tools</title>
+
+  <meta name="description" content="Flash The Law is a fast, focused bar exam study hub with flashcards, attack outlines, rule statements, issue-spotting tools, and smart review resources for law students." />
+
+  <meta name="keywords" content="bar exam flashcards, MBE flashcards, bar exam study tools, law school flashcards, attack outlines, issue spotting, bar prep, law student study tools, Flash The Law" />
+
+  <meta property="og:title" content="Flash The Law | Fast, Focused Bar Exam Review" />
+  <meta property="og:description" content="Bar exam flashcards, attack outlines, issue-spotting tools, and focused study resources for law students." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --navy: #071827;
+      --blue: #123c69;
+      --gold: #f7c948;
+      --cream: #fff8e7;
+      --white: #ffffff;
+      --gray: #f3f5f7;
+      --text: #17202a;
+      --muted: #5f6b7a;
+      --green: #1f8a70;
+      --red: #b23a48;
+      --shadow: 0 12px 35px rgba(7, 24, 39, 0.16);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: var(--white);
+      padding: 22px 18px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: rgba(247, 201, 72, 0.12);
+      right: -170px;
+      top: -120px;
+    }
+
+    nav {
+      max-width: 1150px;
+      margin: 0 auto 55px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      max-width: 1150px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 34px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--gold);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 1.18rem;
+      max-width: 670px;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 14px 22px;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.35);
+      color: var(--white);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .trust-line {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.68);
+    }
+
+    .hero-card {
+      background: var(--white);
+      color: var(--text);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .hero-card h2 {
+      color: var(--navy);
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    .flash-demo {
+      background: var(--gray);
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 16px;
+      min-height: 190px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #dce3ea;
+    }
+
+    .flash-label {
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .flash-question {
+      font-size: 1.2rem;
+      font-weight: 850;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .flash-answer {
+      display: none;
+      color: var(--text);
+      background: var(--white);
+      border-left: 5px solid var(--gold);
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 0.95rem;
+    }
+
+    .tiny-btn {
+      margin-top: 15px;
+      background: var(--navy);
+      color: var(--white);
+      padding: 11px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 70px 18px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 38px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+      color: var(--navy);
+      margin-bottom: 14px;
+      letter-spacing: -1px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .tile {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 8px 22px rgba(7, 24, 39, 0.08);
+      border: 1px solid #e5eaf0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      min-height: 155px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .tile:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .tile-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .tile h3 {
+      color: var(--navy);
+      font-size: 1.08rem;
+      margin-bottom: 8px;
+    }
+
+    .tile p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .status {
+      margin-top: 14px;
+      display: inline-flex;
+      font-size: 0.78rem;
+      background: #edf7f4;
+      color: var(--green);
+      font-weight: 800;
+      padding: 5px 10px;
+      border-radius: 999px;
+      width: fit-content;
+    }
+
+    .dark-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .dark-section .section-heading h2 {
+      color: var(--white);
+    }
+
+    .dark-section .section-heading p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .system-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .system-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.13);
+      border-radius: var(--radius);
+      padding: 26px;
+    }
+
+    .system-card strong {
+      display: block;
+      color: var(--gold);
+      font-size: 0.92rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .system-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    .system-card p {
+      color: rgba(255,255,255,0.74);
+    }
+
+    .preview-area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .preview-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(7, 24, 39, 0.08);
+      border: 1px solid #e5eaf0;
+    }
+
+    .preview-card h3 {
+      color: var(--navy);
+      font-size: 1.45rem;
+      margin-bottom: 14px;
+    }
+
+    .outline-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .outline-list li {
+      background: var(--gray);
+      padding: 13px 14px;
+      border-radius: 12px;
+      border-left: 5px solid var(--gold);
+      font-size: 0.95rem;
+    }
+
+    .callout {
+      background: linear-gradient(135deg, var(--blue), var(--navy));
+      color: var(--white);
+      border-radius: 28px;
+      padding: 42px 28px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .callout h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      margin-bottom: 14px;
+    }
+
+    .callout p {
+      color: rgba(255,255,255,0.78);
+      max-width: 730px;
+      margin: 0 auto 25px;
+      font-size: 1.05rem;
+    }
+
+    .email-box {
+      max-width: 620px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .email-box input {
+      flex: 1;
+      min-width: 230px;
+      border: none;
+      border-radius: 999px;
+      padding: 15px 18px;
+      font-size: 1rem;
+    }
+
+    .email-box button {
+      border: none;
+      border-radius: 999px;
+      padding: 15px 22px;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .roadmap-step {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 22px;
+      border: 1px solid #e5eaf0;
+      box-shadow: 0 8px 22px rgba(7, 24, 39, 0.06);
+    }
+
+    .roadmap-step .number {
+      width: 38px;
+      height: 38px;
+      background: var(--gold);
+      color: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    .roadmap-step h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .roadmap-step p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .disclaimer {
+      background: #fff4f4;
+      border: 1px solid #f1c7c7;
+      color: #5a1f24;
+      border-radius: var(--radius);
+      padding: 22px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.72);
+      padding: 34px 18px;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .preview-area {
+        grid-template-columns: 1fr;
+      }
+
+      .tiles {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .system-grid,
+      .roadmap {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 560px) {
+      header {
+        padding-bottom: 55px;
+      }
+
+      .tiles,
+      .system-grid,
+      .roadmap {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 52px 16px;
+      }
+
+      .hero-card,
+      .preview-card {
+        padding: 22px;
+      }
+
+      .email-box {
+        display: grid;
+      }
+
+      .email-box input,
+      .email-box button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Flash<span>TheLaw</span></div>
+      <div class="nav-links">
+        <a href="#subjects">Subjects</a>
+        <a href="#method">Method</a>
+        <a href="#preview">Preview</a>
+        <a href="#roadmap">Roadmap</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <div class="badge">⚖️ Bar Exam Memory Tools Coming Soon</div>
+        <h1>Fast, focused bar exam review.</h1>
+        <p>
+          Flash The Law is being built as a simple, powerful study hub for bar exam flashcards,
+          attack outlines, rule statements, issue-spotting drills, and last-mile review tools.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#subjects" class="btn btn-primary">Start Reviewing Subjects</a>
+          <a href="#preview" class="btn btn-secondary">See Sample Flashcard</a>
+        </div>
+
+        <div class="trust-line">
+          Built for law students who need clarity, repetition, and momentum — not another overwhelming prep platform.
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>Sample Flashcard</h2>
+        <p>
+          One rule. One concept. One clean answer. Designed for quick review on your phone.
+        </p>
+
+        <div class="flash-demo">
+          <div>
+            <div class="flash-label">Contracts</div>
+            <div class="flash-question">
+              What is the basic rule for consideration?
+            </div>
+            <div class="flash-answer" id="flashAnswer">
+              Consideration requires a bargained-for exchange. Each party must give or promise something of legal value,
+              and the promise must induce the exchange.
+            </div>
+          </div>
+
+          <button class="tiny-btn" onclick="toggleFlashcard()">Reveal Answer</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="subjects">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Subject tiles built for quick recall.</h2>
+        <p>
+          The goal is simple: pick a subject, drill the core rules, recognize the issue, and move.
+          This site will grow subject-by-subject into a practical bar exam memory library.
+        </p>
+      </div>
+
+      <div class="tiles">
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">📄</div>
+            <h3>Contracts</h3>
+            <p>Formation, consideration, defenses, breach, damages, and UCC basics.</p>
+          </div>
+          <span class="status">Preview Ready</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">🚗</div>
+            <h3>Torts</h3>
+            <p>Negligence, intentional torts, strict liability, products liability, and defenses.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">🏛️</div>
+            <h3>Constitutional Law</h3>
+            <p>Judicial review, federalism, individual rights, equal protection, and due process.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">👁️</div>
+            <h3>Evidence</h3>
+            <p>Relevance, hearsay, impeachment, privileges, character evidence, and authentication.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">⚔️</div>
+            <h3>Criminal Law</h3>
+            <p>Homicide, theft, attempt, conspiracy, accomplice liability, and defenses.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">🚓</div>
+            <h3>Criminal Procedure</h3>
+            <p>Search and seizure, confessions, identification, right to counsel, and exclusion.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">🏠</div>
+            <h3>Property</h3>
+            <p>Estates, future interests, landlord-tenant, mortgages, recording, and easements.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">📬</div>
+            <h3>Civil Procedure</h3>
+            <p>Jurisdiction, venue, pleadings, discovery, motions, joinder, and preclusion.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">💼</div>
+            <h3>Business Associations</h3>
+            <p>Agency, partnerships, corporations, duties, authority, and liability.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">🔐</div>
+            <h3>Secured Transactions</h3>
+            <p>Attachment, perfection, priority, proceeds, default, and Article 9 framework.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">🧾</div>
+            <h3>Wills & Trusts</h3>
+            <p>Execution, revocation, intestacy, trusts, fiduciary duties, and distribution.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+
+        <a class="tile" href="#preview">
+          <div>
+            <div class="tile-icon">🤝</div>
+            <h3>Professional Responsibility</h3>
+            <p>Conflicts, confidentiality, competence, fees, candor, and lawyer discipline.</p>
+          </div>
+          <span class="status">Coming Soon</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section" id="method">
+    <div class="container">
+      <div class="section-heading">
+        <h2>The Flash The Law method.</h2>
+        <p>
+          The bar exam rewards recognition, repetition, and clean rule recall. This site is designed around those three jobs.
+        </p>
+      </div>
+
+      <div class="system-grid">
+        <div class="system-card">
+          <strong>Step 1</strong>
+          <h3>Recognize the issue.</h3>
+          <p>
+            Learn to spot the fact patterns that trigger the rule. No issue recognition, no points.
+          </p>
+        </div>
+
+        <div class="system-card">
+          <strong>Step 2</strong>
+          <h3>Recall the rule.</h3>
+          <p>
+            Drill short, usable rule statements that are clean enough for essays and fast enough for MBE review.
+          </p>
+        </div>
+
+        <div class="system-card">
+          <strong>Step 3</strong>
+          <h3>Apply under pressure.</h3>
+          <p>
+            Convert passive reading into active recall with flashcards, attack outlines, and focused mini-prompts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="preview">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Preview the study style.</h2>
+        <p>
+          This first version is intentionally clean. The site can later expand into downloadable decks,
+          paid study packs, email courses, and state-specific supplements.
+        </p>
+      </div>
+
+      <div class="preview-area">
+        <div class="preview-card">
+          <h3>Mini Attack Outline: Contracts</h3>
+          <p>
+            Use this as a quick mental checklist when a contracts question appears.
+          </p>
+
+          <ul class="outline-list">
+            <li><strong>Formation:</strong> Was there an offer, acceptance, and consideration?</li>
+            <li><strong>Defenses:</strong> Capacity, mistake, misrepresentation, duress, undue influence, illegality, unconscionability, statute of frauds.</li>
+            <li><strong>Terms:</strong> Common law mirror image rule or UCC battle of the forms?</li>
+            <li><strong>Performance:</strong> Did a condition occur? Was there substantial performance or material breach?</li>
+            <li><strong>Remedies:</strong> Expectation damages, reliance, restitution, specific performance, liquidated damages.</li>
+          </ul>
+        </div>
+
+        <div class="preview-card">
+          <h3>Rule Statement Example</h3>
+          <p>
+            <strong>Consideration:</strong> Consideration is a bargained-for exchange where each party gives or promises
+            something of legal value. A promise is generally not enforceable unless it is supported by consideration
+            or a recognized substitute, such as promissory estoppel.
+          </p>
+
+          <ul class="outline-list">
+            <li><strong>Trigger words:</strong> promise, exchange, gift, reliance, modification.</li>
+            <li><strong>Common trap:</strong> Past consideration is usually not valid consideration.</li>
+            <li><strong>Essay move:</strong> State the rule, identify what each party gave, then discuss whether the exchange was bargained for.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="callout">
+        <h2>Join the early Flash The Law list.</h2>
+        <p>
+          The full library is under construction. Drop your email to get launch updates, free sample flashcards,
+          study checklists, and early access to the first downloadable bar exam review packs.
+        </p>
+
+        <form class="email-box" onsubmit="handleEmail(event)">
+          <input type="email" id="emailInput" placeholder="Enter your email" required />
+          <button type="submit">Get Updates</button>
+        </form>
+
+        <p id="emailMessage" style="margin-top:16px; display:none; color:#f7c948; font-weight:800;">
+          Thanks — early access signup placeholder received. Connect this form later with Mailchimp, ConvertKit, or Google Forms.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Build roadmap.</h2>
+        <p>
+          Flash The Law starts simple and useful, then grows into a real bar exam review ecosystem.
+        </p>
+      </div>
+
+      <div class="roadmap">
+        <div class="roadmap-step">
+          <div class="number">1</div>
+          <h3>Launch Hub</h3>
+          <p>Publish the homepage, subject tiles, sample flashcards, and early access signup.</p>
+        </div>
+
+        <div class="roadmap-step">
+          <div class="number">2</div>
+          <h3>Subject Pages</h3>
+          <p>Add individual pages for Contracts, Torts, Evidence, Civil Procedure, and more.</p>
+        </div>
+
+        <div class="roadmap-step">
+          <div class="number">3</div>
+          <h3>Digital Packs</h3>
+          <p>Create downloadable flashcard decks, attack outlines, and last-14-days review checklists.</p>
+        </div>
+
+        <div class="roadmap-step">
+          <div class="number">4</div>
+          <h3>Community Layer</h3>
+          <p>Later add study circles, live review sessions, accountability groups, or a private Discord.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="disclaimer">
+        <strong>Important Disclaimer:</strong>
+        Flash The Law is an educational study supplement. It is not legal advice, not a law school course,
+        not a commercial bar prep replacement, and does not guarantee bar exam results. Students should verify all rules
+        against their jurisdiction, official bar materials, and primary study resources.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>FlashTheLaw.com</strong> — Bar exam flashcards, attack outlines, and issue-spotting tools.</p>
+    <p style="margin-top:8px;">© <span id="year"></span> Flash The Law. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleFlashcard() {
+      const answer = document.getElementById("flashAnswer");
+      const button = document.querySelector(".tiny-btn");
+
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+        button.textContent = "Reveal Answer";
+      } else {
+        answer.style.display = "block";
+        button.textContent = "Hide Answer";
+      }
+    }
+
+    function handleEmail(event) {
+      event.preventDefault();
+      document.getElementById("emailMessage").style.display = "block";
+      document.getElementById("emailInput").value = "";
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
