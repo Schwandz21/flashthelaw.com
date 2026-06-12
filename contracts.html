@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contracts | Flash The Law</title>
+  <meta name="description" content="Contracts bar exam review page with attack outline, rule statements, issue spotting triggers, flashcards, and MBE traps." />
+
+  <style>
+    :root {
+      --navy: #071827;
+      --blue: #123c69;
+      --gold: #f7c948;
+      --cream: #fff8e7;
+      --white: #ffffff;
+      --gray: #f3f5f7;
+      --text: #17202a;
+      --muted: #5f6b7a;
+      --green: #1f8a70;
+      --red: #b23a48;
+      --shadow: 0 12px 35px rgba(7, 24, 39, 0.16);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      color: var(--white);
+      padding: 24px 18px 58px;
+    }
+
+    nav {
+      max-width: 1050px;
+      margin: 0 auto 42px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 900;
+      font-size: 1.25rem;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: rgba(255,255,255,0.82);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--gold);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 8vw, 5rem);
+      line-height: 0.96;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: rgba(255,255,255,0.86);
+      font-size: 1.08rem;
+      margin-bottom: 24px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .hero-stat {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.16);
+      padding: 18px;
+      border-radius: 16px;
+    }
+
+    .hero-stat strong {
+      display: block;
+      color: var(--gold);
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+
+    .hero-stat span {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.9rem;
+    }
+
+    section {
+      padding: 54px 18px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      margin-bottom: 24px;
+    }
+
+    .section-title h2 {
+      color: var(--navy);
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      line-height: 1.05;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(7, 24, 39, 0.08);
+      border: 1px solid #e5eaf0;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+
+    .card p {
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .rule {
+      background: var(--gray);
+      border-left: 5px solid var(--gold);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .rule strong {
+      color: var(--navy);
+    }
+
+    .flashcard {
+      background: var(--white);
+      border: 1px solid #dce3ea;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.06);
+    }
+
+    .flashcard small {
+      color: var(--muted);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .flashcard h3 {
+      color: var(--navy);
+      margin: 10px 0;
+      font-size: 1.12rem;
+    }
+
+    .answer {
+      background: var(--gray);
+      border-radius: 12px;
+      padding: 13px;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    .dark {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .dark .section-title h2 {
+      color: var(--white);
+    }
+
+    .dark .section-title p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .dark .card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--white);
+    }
+
+    .dark .card h3 {
+      color: var(--gold);
+    }
+
+    .dark .card p,
+    .dark .card li {
+      color: rgba(255,255,255,0.82);
+    }
+
+    .warning {
+      background: #fff4f4;
+      border: 1px solid #f1c7c7;
+      color: #5a1f24;
+      border-radius: var(--radius);
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    .next-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .next-link {
+      background: var(--white);
+      border: 1px solid #e5eaf0;
+      border-radius: 16px;
+      padding: 18px;
+      font-weight: 850;
+      color: var(--navy);
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.06);
+    }
+
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.74);
+      text-align: center;
+      padding: 32px 18px;
+      font-size: 0.92rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 820px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .next-links {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 44px 16px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Flash<span>TheLaw</span></a>
+      <a class="back-link" href="index.html">← Back to Home</a>
+    </nav>
+
+    <div class="hero">
+      <div class="badge">📄 MBE + Essay Review</div>
+      <h1>Contracts Attack Outline</h1>
+      <p>
+        A fast, focused Contracts review page for bar exam issue spotting, rule recall,
+        common MBE traps, and essay structure. Use this as a high-level checklist before
+        drilling deeper.
+      </p>
+
+      <div class="hero-grid">
+        <div class="hero-stat">
+          <strong>1</strong>
+          <span>Formation first</span>
+        </div>
+        <div class="hero-stat">
+          <strong>2</strong>
+          <span>Defenses next</span>
+        </div>
+        <div class="hero-stat">
+          <strong>3</strong>
+          <span>Breach analysis</span>
+        </div>
+        <div class="hero-stat">
+          <strong>4</strong>
+          <span>Remedies finish</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>The Big Picture</h2>
+        <p>
+          Most Contracts questions can be organized around one simple path:
+          formation, enforceability, terms, performance, breach, and remedies.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Master Checklist</h3>
+        <ul>
+          <li><strong>Formation:</strong> Was there offer, acceptance, and consideration?</li>
+          <li><strong>Governing law:</strong> Common law for services/real estate; UCC Article 2 for sale of goods.</li>
+          <li><strong>Defenses:</strong> Capacity, duress, undue influence, mistake, misrepresentation, illegality, unconscionability, statute of frauds.</li>
+          <li><strong>Terms:</strong> Identify express terms, implied terms, gap fillers, modifications, and conditions.</li>
+          <li><strong>Performance:</strong> Did the parties perform? Was performance excused?</li>
+          <li><strong>Breach:</strong> Material breach, minor breach, anticipatory repudiation, or perfect tender issue?</li>
+          <li><strong>Remedies:</strong> Expectation, reliance, restitution, specific performance, liquidated damages, mitigation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Issue Spotting Triggers</h2>
+        <p>
+          When you see these facts, your brain should immediately jump to the related doctrine.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>“I promise to give…”</h3>
+          <p>Gift promise. Watch for lack of consideration unless reliance creates promissory estoppel.</p>
+        </div>
+
+        <div class="card">
+          <h3>Changed terms</h3>
+          <p>Modification issue. Common law generally needs consideration; UCC needs good faith.</p>
+        </div>
+
+        <div class="card">
+          <h3>Oral deal</h3>
+          <p>Statute of Frauds issue. Ask whether the contract type requires a writing.</p>
+        </div>
+
+        <div class="card">
+          <h3>Goods + merchants</h3>
+          <p>UCC Article 2. Watch battle of the forms, firm offers, perfect tender, and warranties.</p>
+        </div>
+
+        <div class="card">
+          <h3>“Time is of the essence”</h3>
+          <p>Condition/performance issue. Timeliness may become central to breach analysis.</p>
+        </div>
+
+        <div class="card">
+          <h3>One party quits early</h3>
+          <p>Anticipatory repudiation or material breach. Consider adequate assurances and remedies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Core Rule Statements</h2>
+        <p>
+          These are short, usable rule statements. On essays, state the rule, apply the facts,
+          and move quickly.
+        </p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Offer:</strong> An offer is a manifestation of willingness to enter into a bargain that creates the power of acceptance in another person.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Acceptance:</strong> Acceptance is an objective manifestation of assent to the terms of the offer, made in the manner invited or required by the offer.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Consideration:</strong> Consideration requires a bargained-for exchange where each party gives or promises something of legal value.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Promissory Estoppel:</strong> A promise may be enforceable without consideration when the promisor should reasonably expect reliance, the promisee does rely, and injustice can be avoided only by enforcement.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Statute of Frauds:</strong> Certain contracts must be evidenced by a writing signed by the party to be charged, including contracts for land, suretyship, marriage consideration, goods of $500 or more, and contracts not performable within one year.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Material Breach:</strong> A material breach substantially defeats the purpose of the contract and may excuse the nonbreaching party’s remaining performance.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Expectation Damages:</strong> Expectation damages seek to put the nonbreaching party in the position they would have occupied had the contract been performed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Flashcards</h2>
+        <p>
+          Quick active-recall prompts. Read the question, answer it from memory, then check yourself.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="flashcard">
+          <small>Formation</small>
+          <h3>What are the three basic requirements for contract formation?</h3>
+          <div class="answer">Offer, acceptance, and consideration.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Consideration</small>
+          <h3>Is a mere gift promise usually enforceable?</h3>
+          <div class="answer">Usually no, because there is no bargained-for exchange. Check for reliance/promissory estoppel.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>UCC</small>
+          <h3>What law governs contracts for the sale of goods?</h3>
+          <div class="answer">UCC Article 2 governs contracts for the sale of goods.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Remedies</small>
+          <h3>What is the goal of expectation damages?</h3>
+          <div class="answer">To put the nonbreaching party in the position they would have been in if the contract had been performed.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Defenses</small>
+          <h3>What should you think when a contract is oral?</h3>
+          <div class="answer">Statute of Frauds. Ask whether the agreement is a type that requires a writing.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Breach</small>
+          <h3>What is anticipatory repudiation?</h3>
+          <div class="answer">A clear statement or act showing that a party will not perform before performance is due.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Common MBE Traps</h2>
+        <p>
+          Contracts questions love small distinctions. These are the traps to watch for.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Trap List</h3>
+        <ul>
+          <li><strong>Past consideration:</strong> Usually not valid consideration.</li>
+          <li><strong>Advertisements:</strong> Usually invitations to deal, not offers, unless specific and limiting.</li>
+          <li><strong>Silence:</strong> Usually not acceptance, unless circumstances make it reasonable.</li>
+          <li><strong>Mailbox rule:</strong> Acceptance generally effective upon dispatch, but watch exceptions.</li>
+          <li><strong>Option contracts:</strong> Acceptance effective upon receipt, not dispatch.</li>
+          <li><strong>UCC firm offer:</strong> Merchant’s signed promise to keep offer open can be binding without consideration.</li>
+          <li><strong>Perfect tender:</strong> UCC buyer may reject goods if they fail in any respect, subject to cure and exceptions.</li>
+          <li><strong>Specific performance:</strong> More likely for unique goods or land; usually not for ordinary goods or personal services.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Essay Approach</h2>
+        <p>
+          When a Contracts essay appears, keep your structure simple and visible.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Use this essay order</h3>
+        <ul>
+          <li><strong>Step 1:</strong> Identify the governing law: common law or UCC.</li>
+          <li><strong>Step 2:</strong> Discuss formation: offer, acceptance, consideration.</li>
+          <li><strong>Step 3:</strong> Discuss enforceability and defenses.</li>
+          <li><strong>Step 4:</strong> Identify the relevant terms and any conditions.</li>
+          <li><strong>Step 5:</strong> Analyze performance, breach, and excuses.</li>
+          <li><strong>Step 6:</strong> Finish with remedies.</li>
+        </ul>
+      </div>
+
+      <div class="warning">
+        <strong>Study note:</strong> This page is a study supplement, not legal advice or a full bar prep replacement.
+        Always verify rules with your bar prep materials and your jurisdiction’s official guidance.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Next Subjects</h2>
+        <p>
+          These pages are coming next as Flash The Law grows into a full study library.
+        </p>
+      </div>
+
+      <div class="next-links">
+        <a class="next-link" href="index.html">← Back to Homepage</a>
+        <a class="next-link" href="torts.html">Torts Coming Soon</a>
+        <a class="next-link" href="evidence.html">Evidence Coming Soon</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>FlashTheLaw.com</strong> — Fast, focused bar exam review.</p>
+    <p>© <span id="year"></span> Flash The Law. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
