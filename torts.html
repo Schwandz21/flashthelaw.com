@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Torts Bar Exam Review | Flash The Law</title>
+  <meta name="description" content="Torts bar exam mini-course with attack outline, rule statements, issue spotting triggers, flashcards, MBE traps, essay framework, quick quiz, and premium study pack preview." />
+
+  <style>
+    :root {
+      --navy: #071827;
+      --blue: #123c69;
+      --gold: #f7c948;
+      --cream: #fff8e7;
+      --white: #ffffff;
+      --gray: #f3f5f7;
+      --text: #17202a;
+      --muted: #5f6b7a;
+      --green: #1f8a70;
+      --red: #b23a48;
+      --orange: #f2994a;
+      --shadow: 0 12px 35px rgba(7, 24, 39, 0.16);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background:
+        radial-gradient(circle at top right, rgba(247, 201, 72, 0.18), transparent 35%),
+        linear-gradient(135deg, var(--navy), var(--blue));
+      color: var(--white);
+      padding: 22px 18px 62px;
+      overflow: hidden;
+    }
+
+    nav {
+      max-width: 1120px;
+      margin: 0 auto 46px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .logo {
+      font-weight: 950;
+      font-size: 1.28rem;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: rgba(255,255,255,0.84);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--gold);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 0.88rem;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 8vw, 5.25rem);
+      line-height: 0.94;
+      letter-spacing: -2.2px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 740px;
+      color: rgba(255,255,255,0.86);
+      font-size: 1.08rem;
+      margin-bottom: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 999px;
+      padding: 13px 19px;
+      font-weight: 900;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-ghost {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.28);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .hero-card {
+      background: var(--white);
+      color: var(--text);
+      border-radius: 26px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.55);
+    }
+
+    .hero-card h2 {
+      color: var(--navy);
+      font-size: 1.35rem;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 0.96rem;
+    }
+
+    .course-map {
+      display: grid;
+      gap: 10px;
+    }
+
+    .course-map div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gray);
+      border-radius: 14px;
+      padding: 11px 12px;
+      font-weight: 800;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+
+    .course-map span {
+      background: var(--gold);
+      color: var(--navy);
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 950;
+    }
+
+    .jump-wrap {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .jump-nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 10px 18px;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .jump-nav a {
+      white-space: nowrap;
+      color: rgba(255,255,255,0.86);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.84rem;
+    }
+
+    section {
+      padding: 58px 18px;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      margin-bottom: 26px;
+      max-width: 820px;
+    }
+
+    .section-title .eyebrow {
+      display: inline-flex;
+      color: var(--blue);
+      background: rgba(18, 60, 105, 0.08);
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 0.78rem;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 11px;
+    }
+
+    .section-title h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.04;
+      margin-bottom: 11px;
+      letter-spacing: -1.2px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(7, 24, 39, 0.08);
+      border: 1px solid #e5eaf0;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+      line-height: 1.18;
+    }
+
+    .card p {
+      margin-bottom: 12px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .mini-note {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .attack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .attack-step {
+      background: var(--white);
+      border: 1px solid #e5eaf0;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(7, 24, 39, 0.06);
+    }
+
+    .attack-step h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .num {
+      background: var(--gold);
+      color: var(--navy);
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+      font-weight: 950;
+    }
+
+    .rule {
+      background: var(--white);
+      border-left: 6px solid var(--gold);
+      border-radius: 16px;
+      padding: 17px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.055);
+      border-top: 1px solid #e5eaf0;
+      border-right: 1px solid #e5eaf0;
+      border-bottom: 1px solid #e5eaf0;
+    }
+
+    .rule strong {
+      color: var(--navy);
+    }
+
+    .trigger {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 20px;
+      border: 1px solid #e5eaf0;
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.06);
+    }
+
+    .trigger .if {
+      color: var(--red);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-size: 0.8rem;
+      margin-bottom: 6px;
+    }
+
+    .trigger h3 {
+      color: var(--navy);
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .trigger .think {
+      color: var(--green);
+      font-weight: 950;
+      margin-top: 10px;
+    }
+
+    .flashcard {
+      background: var(--white);
+      border: 1px solid #dce3ea;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.06);
+    }
+
+    .flashcard small {
+      color: var(--muted);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .flashcard h3 {
+      color: var(--navy);
+      margin: 10px 0;
+      font-size: 1.12rem;
+    }
+
+    .answer {
+      background: var(--gray);
+      border-radius: 12px;
+      padding: 13px;
+      color: var(--text);
+      font-size: 0.95rem;
+      border-left: 4px solid var(--gold);
+    }
+
+    .dark {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .dark .section-title .eyebrow {
+      color: var(--navy);
+      background: var(--gold);
+    }
+
+    .dark .section-title h2 {
+      color: var(--white);
+    }
+
+    .dark .section-title p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .dark .card,
+    .dark .trigger,
+    .dark .attack-step,
+    .dark .flashcard {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--white);
+    }
+
+    .dark .card h3,
+    .dark .trigger h3,
+    .dark .attack-step h3,
+    .dark .flashcard h3 {
+      color: var(--gold);
+    }
+
+    .dark .card p,
+    .dark .card li,
+    .dark .attack-step li,
+    .dark .flashcard p {
+      color: rgba(255,255,255,0.82);
+    }
+
+    .dark .answer {
+      background: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.88);
+    }
+
+    .dark .think {
+      color: var(--gold);
+    }
+
+    .quiz {
+      display: grid;
+      gap: 16px;
+    }
+
+    .quiz-card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 22px;
+      border: 1px solid #e5eaf0;
+      box-shadow: 0 8px 20px rgba(7, 24, 39, 0.06);
+    }
+
+    .quiz-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    details {
+      margin-top: 12px;
+      background: var(--gray);
+      border-radius: 12px;
+      padding: 12px 14px;
+      border-left: 4px solid var(--gold);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 950;
+      color: var(--navy);
+    }
+
+    details p {
+      margin-top: 10px;
+    }
+
+    .premium {
+      background:
+        radial-gradient(circle at top left, rgba(247, 201, 72, 0.18), transparent 33%),
+        linear-gradient(135deg, var(--blue), var(--navy));
+      color: var(--white);
+      border-radius: 30px;
+      padding: 34px 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .premium h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.04;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .premium p {
+      color: rgba(255,255,255,0.82);
+      max-width: 780px;
+      margin-bottom: 20px;
+    }
+
+    .premium-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .premium-item {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 16px;
+      padding: 15px;
+      font-weight: 850;
+    }
+
+    .pill {
+      display: inline-flex;
+      background: var(--gold);
+      color: var(--navy);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-weight: 950;
+      font-size: 0.86rem;
+      margin-bottom: 14px;
+    }
+
+    .warning {
+      background: #fff4f4;
+      border: 1px solid #f1c7c7;
+      color: #5a1f24;
+      border-radius: var(--radius);
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    .next-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .next-link {
+      background: var(--white);
+      border: 1px solid #e5eaf0;
+      border-radius: 16px;
+      padding: 18px;
+      font-weight: 900;
+      color: var(--navy);
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.06);
+    }
+
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.74);
+      text-align: center;
+      padding: 34px 18px;
+      font-size: 0.92rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .premium-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .grid-2,
+      .grid-3,
+      .next-links,
+      .premium-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 46px 16px;
+      }
+
+      .card,
+      .attack-step,
+      .trigger,
+      .flashcard,
+      .quiz-card {
+        padding: 19px;
+      }
+
+      nav {
+        margin-bottom: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Flash<span>TheLaw</span></a>
+      <a class="back-link" href="index.html">← Back to Home</a>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <div class="badge">🚗 Torts Mini-Course · MBE + Essay</div>
+        <h1>Torts Attack System</h1>
+        <p>
+          Torts is about wrongful conduct and responsibility. Identify the tort, prove the elements,
+          connect conduct to harm, check defenses, and finish with damages.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#attack">Start the Attack Outline</a>
+          <a class="btn btn-ghost" href="#quiz">Take the Quick Quiz</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>The Torts Path</h2>
+        <p>When the facts get messy, force them into this order.</p>
+
+        <div class="course-map">
+          <div><span>1</span> What tort is being tested?</div>
+          <div><span>2</span> What elements must be proven?</div>
+          <div><span>3</span> Did defendant’s conduct cause the harm?</div>
+          <div><span>4</span> Is there a defense or privilege?</div>
+          <div><span>5</span> What damages or remedies are available?</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="jump-wrap">
+    <div class="jump-nav">
+      <a href="#mindset">Mindset</a>
+      <a href="#attack">Attack Outline</a>
+      <a href="#rules">Rules</a>
+      <a href="#triggers">Triggers</a>
+      <a href="#flashcards">Flashcards</a>
+      <a href="#traps">MBE Traps</a>
+      <a href="#essay">Essay</a>
+      <a href="#memory">Memory Hooks</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#premium">Premium Pack</a>
+    </div>
+  </div>
+
+  <section id="mindset">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 1</span>
+        <h2>How to think about Torts</h2>
+        <p>
+          Torts questions usually ask whether one person should be legally responsible for harm to another.
+          The trap is mixing tort categories instead of identifying the correct theory first.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>The simple mental model</h3>
+          <p>A Torts problem is usually asking:</p>
+          <ul>
+            <li>What wrongful conduct occurred?</li>
+            <li>What duty or protected interest was violated?</li>
+            <li>Did that conduct actually and proximately cause harm?</li>
+            <li>Can the defendant avoid or reduce liability?</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>The bar exam move</h3>
+          <p>Separate the torts before applying rules.</p>
+          <ul>
+            <li>Intentional torts require intent to act or cause contact/apprehension/confinement.</li>
+            <li>Negligence requires duty, breach, causation, and damages.</li>
+            <li>Strict liability can impose liability without fault.</li>
+            <li>Products liability focuses on defective products and resulting harm.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>The one sentence promise</h3>
+        <p>
+          If you can run every Torts fact pattern through
+          <strong>tort type → elements → causation → defenses → damages</strong>,
+          you will control most Torts questions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="attack">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 2</span>
+        <h2>The Torts Attack Outline</h2>
+        <p>
+          This is the master order. First classify the tort, then apply the elements.
+        </p>
+      </div>
+
+      <div class="attack">
+        <div class="attack-step">
+          <h3><span class="num">1</span> Identify the Tort Category</h3>
+          <ul>
+            <li><strong>Intentional torts:</strong> battery, assault, false imprisonment, IIED, trespass, conversion.</li>
+            <li><strong>Negligence:</strong> duty, breach, causation, damages.</li>
+            <li><strong>Strict liability:</strong> abnormally dangerous activities and wild animals.</li>
+            <li><strong>Products liability:</strong> manufacturing defect, design defect, warning defect.</li>
+            <li><strong>Nuisance / defamation / privacy:</strong> watch for specialized fact patterns.</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">2</span> Prove the Elements</h3>
+          <ul>
+            <li>State each element clearly.</li>
+            <li>Match facts to each element.</li>
+            <li>Do not skip damages if the tort requires actual harm.</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">3</span> Analyze Causation</h3>
+          <ul>
+            <li><strong>Actual cause:</strong> but-for cause or substantial factor.</li>
+            <li><strong>Proximate cause:</strong> foreseeable type of harm and no superseding cause.</li>
+            <li>Watch intervening events, rescuers, medical malpractice, and unusual injuries.</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">4</span> Check Defenses and Privileges</h3>
+          <ul>
+            <li>Consent</li>
+            <li>Self-defense / defense of others</li>
+            <li>Defense of property</li>
+            <li>Necessity</li>
+            <li>Comparative negligence</li>
+            <li>Assumption of risk</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">5</span> Finish with Damages</h3>
+          <ul>
+            <li>Compensatory damages</li>
+            <li>Nominal damages for some intentional torts</li>
+            <li>Punitive damages for malicious, outrageous, or reckless conduct</li>
+            <li>Emotional distress damages where allowed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rules">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 3</span>
+        <h2>Must-know rule statements</h2>
+        <p>
+          These are exam-ready starting points. Add jurisdiction-specific nuance if your course or bar prep materials require it.
+        </p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Negligence:</strong> Negligence requires duty, breach, actual cause, proximate cause, and damages.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Duty:</strong> A defendant generally owes a duty to act as a reasonably prudent person under the circumstances to avoid foreseeable risks of harm.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Breach:</strong> Breach occurs when the defendant’s conduct falls below the applicable standard of care.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Actual Cause:</strong> Actual cause is usually shown when the injury would not have occurred but for the defendant’s conduct.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Proximate Cause:</strong> Proximate cause limits liability to harms that are within the foreseeable scope of the defendant’s risk-creating conduct.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Battery:</strong> Battery is an intentional act causing harmful or offensive contact with another person or something closely connected to them.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Assault:</strong> Assault is an intentional act causing reasonable apprehension of imminent harmful or offensive contact.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>False Imprisonment:</strong> False imprisonment is intentional confinement of another person within fixed boundaries without lawful privilege and with awareness or harm.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>IIED:</strong> Intentional infliction of emotional distress requires extreme and outrageous conduct that intentionally or recklessly causes severe emotional distress.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Strict Liability:</strong> Strict liability may apply to abnormally dangerous activities and certain animal-related harms regardless of reasonable care.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Products Liability:</strong> A seller may be liable when a defective product causes injury, including manufacturing defects, design defects, or inadequate warnings.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="triggers">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 4</span>
+        <h2>If you see this fact, think this issue</h2>
+        <p>
+          Torts is full of trigger facts. Train your brain to connect the fact pattern to the doctrine.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Physical touching or contact</h3>
+          <p class="think">Think: battery.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Threat of immediate contact</h3>
+          <p class="think">Think: assault.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Locked room, blocked exit, or restraint</h3>
+          <p class="think">Think: false imprisonment.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Careless conduct causing injury</h3>
+          <p class="think">Think: negligence.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Violation of a safety statute</h3>
+          <p class="think">Think: negligence per se.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Accident that normally does not happen without negligence</h3>
+          <p class="think">Think: res ipsa loquitur.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Explosives, blasting, toxic chemicals</h3>
+          <p class="think">Think: abnormally dangerous activity.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Defective product injures user</h3>
+          <p class="think">Think: products liability.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Plaintiff knowingly accepts risk</h3>
+          <p class="think">Think: assumption of risk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flashcards">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 5</span>
+        <h2>Active recall flashcards</h2>
+        <p>
+          Answer first. Then check. Torts rewards fast element recall.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="flashcard">
+          <small>Negligence</small>
+          <h3>What are the elements of negligence?</h3>
+          <div class="answer">Duty, breach, actual cause, proximate cause, and damages.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Battery</small>
+          <h3>Does battery require physical injury?</h3>
+          <div class="answer">No. Battery can be based on harmful or offensive contact, even without physical injury.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Assault</small>
+          <h3>What must the plaintiff apprehend for assault?</h3>
+          <div class="answer">Imminent harmful or offensive contact.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Causation</small>
+          <h3>What is the usual test for actual cause?</h3>
+          <div class="answer">But-for causation: the injury would not have occurred but for the defendant’s conduct.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Strict Liability</small>
+          <h3>What activities often trigger strict liability?</h3>
+          <div class="answer">Abnormally dangerous activities and certain animal-related harms.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Products Liability</small>
+          <h3>What are the major product defect categories?</h3>
+          <div class="answer">Manufacturing defect, design defect, and inadequate warning.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="traps">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 6</span>
+        <h2>Common MBE traps</h2>
+        <p>
+          Torts questions often test small differences between similar doctrines.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Intentional tort traps</h3>
+          <ul>
+            <li><strong>Battery:</strong> offensive contact is enough; injury is not always required.</li>
+            <li><strong>Assault:</strong> words alone are usually not enough unless paired with conduct.</li>
+            <li><strong>False imprisonment:</strong> plaintiff must know of confinement or be harmed by it.</li>
+            <li><strong>Transferred intent:</strong> can transfer among certain intentional torts.</li>
+            <li><strong>Consent:</strong> can be express, implied, or limited by scope.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Negligence traps</h3>
+          <ul>
+            <li><strong>Duty:</strong> do not assume everyone owes every possible duty.</li>
+            <li><strong>Negligence per se:</strong> statute must protect the class and type of harm involved.</li>
+            <li><strong>Res ipsa:</strong> usually needs exclusive control and an accident not typical without negligence.</li>
+            <li><strong>Eggshell plaintiff:</strong> defendant takes plaintiff as found.</li>
+            <li><strong>Pure economic loss:</strong> may be limited without personal injury or property damage.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Causation traps</h3>
+          <ul>
+            <li><strong>Actual cause:</strong> but-for is different from proximate cause.</li>
+            <li><strong>Superseding cause:</strong> may cut off liability if unforeseeable.</li>
+            <li><strong>Intervening medical negligence:</strong> often foreseeable.</li>
+            <li><strong>Rescuers:</strong> rescue attempts are often foreseeable.</li>
+            <li><strong>Multiple causes:</strong> substantial factor may matter.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Products and strict liability traps</h3>
+          <ul>
+            <li><strong>Manufacturing defect:</strong> product departs from intended design.</li>
+            <li><strong>Design defect:</strong> design itself is unsafe.</li>
+            <li><strong>Warning defect:</strong> inadequate warnings or instructions.</li>
+            <li><strong>Strict liability:</strong> reasonable care is not always a defense.</li>
+            <li><strong>Misuse:</strong> may matter if unforeseeable.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="essay">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 7</span>
+        <h2>Essay framework</h2>
+        <p>
+          On a Torts essay, headings are your friend. Separate each possible tort and walk through elements.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Torts essay order</h3>
+        <ol>
+          <li><strong>Identify the plaintiff and defendant.</strong></li>
+          <li><strong>Identify the tort theory.</strong> Intentional tort, negligence, strict liability, products liability, etc.</li>
+          <li><strong>State the elements.</strong></li>
+          <li><strong>Apply facts to each element.</strong></li>
+          <li><strong>Analyze causation.</strong> Actual cause and proximate cause.</li>
+          <li><strong>Discuss defenses.</strong> Consent, self-defense, comparative negligence, assumption of risk, privilege.</li>
+          <li><strong>Conclude on liability.</strong></li>
+          <li><strong>Finish with damages/remedies.</strong></li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Mini essay template</h3>
+        <p>
+          <strong>Issue:</strong> The issue is whether [defendant] is liable to [plaintiff] for [tort] based on [trigger fact].
+        </p>
+        <p>
+          <strong>Rule:</strong> State the elements of the tort.
+        </p>
+        <p>
+          <strong>Application:</strong> Apply each element to the facts. Do not skip causation.
+        </p>
+        <p>
+          <strong>Defense:</strong> Address any privilege, consent, comparative fault, or assumption of risk.
+        </p>
+        <p>
+          <strong>Conclusion:</strong> Therefore, [defendant] likely [is/is not] liable, and [plaintiff] may recover [damages].
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="memory">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 8</span>
+        <h2>Memory hooks</h2>
+        <p>
+          Use these as quick handles when the fact pattern starts to sprawl.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Type → Elements → Causation → Defense → Damages</h3>
+          <p>
+            This is the master Torts spine. Restart here if you get lost.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Touch = Battery</h3>
+          <p>
+            If there is physical contact, ask whether it was harmful or offensive.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Threat = Assault</h3>
+          <p>
+            If plaintiff expects immediate contact, assault may be in play.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Careless = Negligence</h3>
+          <p>
+            Careless conduct causing injury should trigger duty, breach, causation, damages.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Dangerous = Strict Liability</h3>
+          <p>
+            Abnormally dangerous activity can create liability even with care.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Product = Defect</h3>
+          <p>
+            Product injury means ask manufacturing, design, and warning defect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 9</span>
+        <h2>Quick quiz</h2>
+        <p>
+          Answer first. Then open the answer. This is where the rules become usable.
+        </p>
+      </div>
+
+      <div class="quiz">
+        <div class="quiz-card">
+          <h3>1. Defendant intentionally taps plaintiff’s shoulder in a way a reasonable person would find offensive. Battery?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Likely yes. Battery can be based on intentional harmful or offensive contact, even without physical injury.</p>
+          </details>
+        </div>
+
+        <div class="quiz-card">
+          <h3>2. Defendant swings a fist but misses. Plaintiff reasonably believes contact is imminent. What tort?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Assault. The key is reasonable apprehension of imminent harmful or offensive contact.</p>
+          </details>
+        </div>
+
+        <div class="quiz-card">
+          <h3>3. Defendant runs a red light and hits plaintiff. What negligence elements matter?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Duty, breach, actual cause, proximate cause, and damages. The red-light violation may also raise negligence per se if the statute applies.</p>
+          </details>
+        </div>
+
+        <div class="quiz-card">
+          <h3>4. Defendant uses explosives with great care, but nearby property is damaged. What doctrine?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Strict liability for abnormally dangerous activities may apply even if defendant used reasonable care.</p>
+          </details>
+        </div>
+
+        <div class="quiz-card">
+          <h3>5. A product leaves the factory different from its intended design and injures a user. What defect?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Manufacturing defect. The specific product departed from its intended design.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="premium">
+    <div class="container">
+      <div class="premium">
+        <div class="pill">Coming Soon</div>
+        <h2>Torts Flash Pack</h2>
+        <p>
+          The free page gives you the framework. The paid pack will be built for drilling:
+          more elements, more trigger facts, more MBE traps, and more essay-ready issue checklists.
+        </p>
+
+        <div class="premium-grid">
+          <div class="premium-item">100+ Torts flashcards</div>
+          <div class="premium-item">Printable attack outline</div>
+          <div class="premium-item">Intentional torts grid</div>
+          <div class="premium-item">Negligence issue checklist</div>
+        </div>
+
+        <p style="margin-top:20px; margin-bottom:0;">
+          Planned launch price: <strong>$1.99–$3.99</strong> for the first study pack.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="warning">
+        <strong>Important study disclaimer:</strong>
+        Flash The Law is an educational study supplement. It is not legal advice, not a law school course,
+        not a commercial bar prep replacement, and does not guarantee bar exam results. Always verify rules
+        with your bar prep provider, professor, jurisdiction, and official bar exam materials.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Next</span>
+        <h2>Keep building the library</h2>
+        <p>
+          Once this Torts format feels right, we can keep cloning this structure across the bar subjects.
+        </p>
+      </div>
+
+      <div class="next-links">
+        <a class="next-link" href="index.html">← Back to Homepage</a>
+        <a class="next-link" href="contracts.html">Contracts Course</a>
+        <a class="next-link" href="evidence.html">Evidence Coming Soon</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>FlashTheLaw.com</strong> — Fast, focused bar exam review.</p>
+    <p>© <span id="year"></span> Flash The Law. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
