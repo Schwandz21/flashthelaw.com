@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Civil Procedure Bar Exam Review | Flash The Law</title>
+  <meta name="description" content="Civil Procedure bar exam mini-course with attack outline, rule statements, issue spotting triggers, flashcards, MBE traps, essay framework, quick quiz, and premium study pack preview." />
+
+  <style>
+    :root {
+      --navy: #071827;
+      --blue: #123c69;
+      --gold: #f7c948;
+      --cream: #fff8e7;
+      --white: #ffffff;
+      --gray: #f3f5f7;
+      --text: #17202a;
+      --muted: #5f6b7a;
+      --green: #1f8a70;
+      --red: #b23a48;
+      --orange: #f2994a;
+      --shadow: 0 12px 35px rgba(7, 24, 39, 0.16);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+      background:
+        radial-gradient(circle at top right, rgba(247, 201, 72, 0.18), transparent 35%),
+        linear-gradient(135deg, var(--navy), var(--blue));
+      color: var(--white);
+      padding: 22px 18px 62px;
+      overflow: hidden;
+    }
+
+    nav {
+      max-width: 1120px;
+      margin: 0 auto 46px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .logo {
+      font-weight: 950;
+      font-size: 1.28rem;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: rgba(255,255,255,0.84);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: var(--gold);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 0.88rem;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 8vw, 5.25rem);
+      line-height: 0.94;
+      letter-spacing: -2.2px;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 740px;
+      color: rgba(255,255,255,0.86);
+      font-size: 1.08rem;
+      margin-bottom: 24px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 999px;
+      padding: 13px 19px;
+      font-weight: 900;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-ghost {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.28);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .hero-card {
+      background: var(--white);
+      color: var(--text);
+      border-radius: 26px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.55);
+    }
+
+    .hero-card h2 {
+      color: var(--navy);
+      font-size: 1.35rem;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .hero-card p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 0.96rem;
+    }
+
+    .course-map {
+      display: grid;
+      gap: 10px;
+    }
+
+    .course-map div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gray);
+      border-radius: 14px;
+      padding: 11px 12px;
+      font-weight: 800;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+
+    .course-map span {
+      background: var(--gold);
+      color: var(--navy);
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 0.82rem;
+      font-weight: 950;
+    }
+
+    .jump-wrap {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .jump-nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 10px 18px;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .jump-nav a {
+      white-space: nowrap;
+      color: rgba(255,255,255,0.86);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.84rem;
+    }
+
+    section {
+      padding: 58px 18px;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      margin-bottom: 26px;
+      max-width: 820px;
+    }
+
+    .section-title .eyebrow {
+      display: inline-flex;
+      color: var(--blue);
+      background: rgba(18, 60, 105, 0.08);
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 0.78rem;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 11px;
+    }
+
+    .section-title h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.04;
+      margin-bottom: 11px;
+      letter-spacing: -1.2px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(7, 24, 39, 0.08);
+      border: 1px solid #e5eaf0;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+      line-height: 1.18;
+    }
+
+    .card p {
+      margin-bottom: 12px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .mini-note {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .attack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .attack-step {
+      background: var(--white);
+      border: 1px solid #e5eaf0;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(7, 24, 39, 0.06);
+    }
+
+    .attack-step h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .num {
+      background: var(--gold);
+      color: var(--navy);
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+      font-weight: 950;
+    }
+
+    .rule {
+      background: var(--white);
+      border-left: 6px solid var(--gold);
+      border-radius: 16px;
+      padding: 17px;
+      margin-bottom: 14px;
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.055);
+      border-top: 1px solid #e5eaf0;
+      border-right: 1px solid #e5eaf0;
+      border-bottom: 1px solid #e5eaf0;
+    }
+
+    .rule strong {
+      color: var(--navy);
+    }
+
+    .trigger {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 20px;
+      border: 1px solid #e5eaf0;
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.06);
+    }
+
+    .trigger .if {
+      color: var(--red);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-size: 0.8rem;
+      margin-bottom: 6px;
+    }
+
+    .trigger h3 {
+      color: var(--navy);
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .trigger .think {
+      color: var(--green);
+      font-weight: 950;
+      margin-top: 10px;
+    }
+
+    .flashcard {
+      background: var(--white);
+      border: 1px solid #dce3ea;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.06);
+    }
+
+    .flashcard small {
+      color: var(--muted);
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .flashcard h3 {
+      color: var(--navy);
+      margin: 10px 0;
+      font-size: 1.12rem;
+    }
+
+    .answer {
+      background: var(--gray);
+      border-radius: 12px;
+      padding: 13px;
+      color: var(--text);
+      font-size: 0.95rem;
+      border-left: 4px solid var(--gold);
+    }
+
+    .dark {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .dark .section-title .eyebrow {
+      color: var(--navy);
+      background: var(--gold);
+    }
+
+    .dark .section-title h2 {
+      color: var(--white);
+    }
+
+    .dark .section-title p {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .dark .card,
+    .dark .trigger,
+    .dark .attack-step,
+    .dark .flashcard {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--white);
+    }
+
+    .dark .card h3,
+    .dark .trigger h3,
+    .dark .attack-step h3,
+    .dark .flashcard h3 {
+      color: var(--gold);
+    }
+
+    .dark .card p,
+    .dark .card li,
+    .dark .attack-step li,
+    .dark .flashcard p {
+      color: rgba(255,255,255,0.82);
+    }
+
+    .dark .answer {
+      background: rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.88);
+    }
+
+    .dark .think {
+      color: var(--gold);
+    }
+
+    .quiz {
+      display: grid;
+      gap: 16px;
+    }
+
+    .quiz-card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 22px;
+      border: 1px solid #e5eaf0;
+      box-shadow: 0 8px 20px rgba(7, 24, 39, 0.06);
+    }
+
+    .quiz-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    details {
+      margin-top: 12px;
+      background: var(--gray);
+      border-radius: 12px;
+      padding: 12px 14px;
+      border-left: 4px solid var(--gold);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 950;
+      color: var(--navy);
+    }
+
+    details p {
+      margin-top: 10px;
+    }
+
+    .premium {
+      background:
+        radial-gradient(circle at top left, rgba(247, 201, 72, 0.18), transparent 33%),
+        linear-gradient(135deg, var(--blue), var(--navy));
+      color: var(--white);
+      border-radius: 30px;
+      padding: 34px 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .premium h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.04;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .premium p {
+      color: rgba(255,255,255,0.82);
+      max-width: 780px;
+      margin-bottom: 20px;
+    }
+
+    .premium-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .premium-item {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 16px;
+      padding: 15px;
+      font-weight: 850;
+    }
+
+    .pill {
+      display: inline-flex;
+      background: var(--gold);
+      color: var(--navy);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-weight: 950;
+      font-size: 0.86rem;
+      margin-bottom: 14px;
+    }
+
+    .warning {
+      background: #fff4f4;
+      border: 1px solid #f1c7c7;
+      color: #5a1f24;
+      border-radius: var(--radius);
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    .next-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .next-link {
+      background: var(--white);
+      border: 1px solid #e5eaf0;
+      border-radius: 16px;
+      padding: 18px;
+      font-weight: 900;
+      color: var(--navy);
+      box-shadow: 0 8px 18px rgba(7, 24, 39, 0.06);
+    }
+
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.74);
+      text-align: center;
+      padding: 34px 18px;
+      font-size: 0.92rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .premium-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .grid-2,
+      .grid-3,
+      .next-links,
+      .premium-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 46px 16px;
+      }
+
+      .card,
+      .attack-step,
+      .trigger,
+      .flashcard,
+      .quiz-card {
+        padding: 19px;
+      }
+
+      nav {
+        margin-bottom: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html">Flash<span>TheLaw</span></a>
+      <a class="back-link" href="index.html">← Back to Home</a>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <div class="badge">📬 Civil Procedure Mini-Course · MBE + Essay</div>
+        <h1>Civil Procedure Attack System</h1>
+        <p>
+          Civil Procedure is the law of lawsuits. The question is usually where the case belongs,
+          who can be joined, what must be filed, what discovery is allowed, and whether the court can decide now.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#attack">Start the Attack Outline</a>
+          <a class="btn btn-ghost" href="#quiz">Take the Quick Quiz</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>The Civ Pro Path</h2>
+        <p>When the procedure feels overwhelming, force the case through this order.</p>
+
+        <div class="course-map">
+          <div><span>1</span> Can this court hear this case?</div>
+          <div><span>2</span> Is this the right place and court?</div>
+          <div><span>3</span> Were the pleadings and parties proper?</div>
+          <div><span>4</span> What discovery, motions, or trial rules apply?</div>
+          <div><span>5</span> Is the judgment final or preclusive?</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="jump-wrap">
+    <div class="jump-nav">
+      <a href="#mindset">Mindset</a>
+      <a href="#attack">Attack Outline</a>
+      <a href="#rules">Rules</a>
+      <a href="#triggers">Triggers</a>
+      <a href="#flashcards">Flashcards</a>
+      <a href="#traps">MBE Traps</a>
+      <a href="#essay">Essay</a>
+      <a href="#memory">Memory Hooks</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#premium">Premium Pack</a>
+    </div>
+  </div>
+
+  <section id="mindset">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 1</span>
+        <h2>How to think about Civil Procedure</h2>
+        <p>
+          Civ Pro is not mainly about who is right on the facts. It is about whether the lawsuit is in the right court,
+          at the right time, with the right parties, using the right process.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>The simple mental model</h3>
+          <p>A Civil Procedure problem is usually asking:</p>
+          <ul>
+            <li>Does the court have power over this case and defendant?</li>
+            <li>Is venue proper?</li>
+            <li>Was service or pleading defective?</li>
+            <li>Can parties or claims be joined?</li>
+            <li>Can the court dismiss, decide, or preclude the case?</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>The bar exam move</h3>
+          <p>Separate power, place, process, and preclusion.</p>
+          <ul>
+            <li><strong>Power:</strong> personal jurisdiction and subject matter jurisdiction.</li>
+            <li><strong>Place:</strong> venue, transfer, forum non conveniens.</li>
+            <li><strong>Process:</strong> pleadings, service, discovery, motions, trial.</li>
+            <li><strong>Preclusion:</strong> claim preclusion and issue preclusion.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>The one sentence promise</h3>
+        <p>
+          If you can run every Civ Pro fact pattern through
+          <strong>jurisdiction → venue → pleadings → parties/claims → discovery/motions → trial → judgment/preclusion</strong>,
+          you can keep the lawsuit organized.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="attack">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 2</span>
+        <h2>The Civil Procedure Attack Outline</h2>
+        <p>
+          This is the master sequence. Start with the court’s power before arguing about the merits.
+        </p>
+      </div>
+
+      <div class="attack">
+        <div class="attack-step">
+          <h3><span class="num">1</span> Jurisdiction</h3>
+          <ul>
+            <li><strong>Personal jurisdiction:</strong> does the court have power over the defendant?</li>
+            <li><strong>Subject matter jurisdiction:</strong> does the court have power over the type of case?</li>
+            <li><strong>Supplemental jurisdiction:</strong> can related claims come along?</li>
+            <li><strong>Removal:</strong> can a defendant move the case from state to federal court?</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">2</span> Venue, Transfer, and Forum</h3>
+          <ul>
+            <li>Is venue proper?</li>
+            <li>Should the case be transferred?</li>
+            <li>Should the case be dismissed for forum non conveniens?</li>
+            <li>Is there a valid forum selection clause?</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">3</span> Erie and Choice of Law</h3>
+          <ul>
+            <li>Federal court sitting in diversity may need to apply state substantive law.</li>
+            <li>Federal procedural law generally applies in federal court.</li>
+            <li>Watch conflicts between federal rules and state law.</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">4</span> Pleadings and Service</h3>
+          <ul>
+            <li>Complaint requirements</li>
+            <li>Answer and affirmative defenses</li>
+            <li>Rule 12 motions</li>
+            <li>Amendments</li>
+            <li>Service of process</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">5</span> Parties and Claims</h3>
+          <ul>
+            <li>Joinder of claims</li>
+            <li>Joinder of parties</li>
+            <li>Counterclaims and crossclaims</li>
+            <li>Impleader</li>
+            <li>Intervention</li>
+            <li>Class actions</li>
+          </ul>
+        </div>
+
+        <div class="attack-step">
+          <h3><span class="num">6</span> Discovery, Motions, Trial, and Judgment</h3>
+          <ul>
+            <li>Scope of discovery and work product</li>
+            <li>Motion to dismiss</li>
+            <li>Summary judgment</li>
+            <li>Judgment as a matter of law</li>
+            <li>New trial and relief from judgment</li>
+            <li>Claim preclusion and issue preclusion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rules">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 3</span>
+        <h2>Must-know rule statements</h2>
+        <p>
+          These rules are built for quick recall. Civ Pro rewards exact sequencing and clean labels.
+        </p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Personal Jurisdiction:</strong> A court may exercise personal jurisdiction over a defendant when authorized by statute and consistent with due process, usually requiring minimum contacts with the forum such that jurisdiction is fair and reasonable.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Specific Jurisdiction:</strong> Specific jurisdiction exists when the claim arises out of or relates to the defendant’s contacts with the forum.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>General Jurisdiction:</strong> General jurisdiction exists where a defendant is essentially at home, typically an individual’s domicile or a corporation’s place of incorporation or principal place of business.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Federal Question Jurisdiction:</strong> Federal courts have subject matter jurisdiction over civil actions arising under the Constitution, laws, or treaties of the United States.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Diversity Jurisdiction:</strong> Diversity jurisdiction generally requires complete diversity between plaintiffs and defendants and an amount in controversy exceeding $75,000.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Supplemental Jurisdiction:</strong> Federal courts may hear additional claims that form part of the same case or controversy as a claim within original jurisdiction, subject to statutory limits.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Venue:</strong> Venue is generally proper where any defendant resides if all defendants reside in the same state, or where a substantial part of the events or omissions occurred.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Erie Doctrine:</strong> In diversity cases, federal courts generally apply state substantive law and federal procedural law.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Summary Judgment:</strong> Summary judgment is proper when there is no genuine dispute of material fact and the movant is entitled to judgment as a matter of law.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Claim Preclusion:</strong> Claim preclusion bars relitigation of the same claim between the same parties after a final valid judgment on the merits.</p>
+      </div>
+
+      <div class="rule">
+        <p><strong>Issue Preclusion:</strong> Issue preclusion bars relitigation of an issue actually litigated and necessarily decided in a prior valid final judgment, where the party to be bound had a full and fair opportunity to litigate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="triggers">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 4</span>
+        <h2>If you see this fact, think this issue</h2>
+        <p>
+          Civil Procedure is trigger-heavy. The fact pattern usually tells you which procedural gate to check.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Out-of-state defendant</h3>
+          <p class="think">Think: personal jurisdiction.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Corporation sued far from headquarters</h3>
+          <p class="think">Think: general vs. specific jurisdiction.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Plaintiff and defendant from different states</h3>
+          <p class="think">Think: diversity jurisdiction.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Federal statute or constitutional claim</h3>
+          <p class="think">Think: federal question jurisdiction.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>State law claim attached to federal claim</h3>
+          <p class="think">Think: supplemental jurisdiction.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Case filed in state court but defendant wants federal court</h3>
+          <p class="think">Think: removal.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Federal diversity case involving state law</h3>
+          <p class="think">Think: Erie.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>No genuine dispute of material fact</h3>
+          <p class="think">Think: summary judgment.</p>
+        </div>
+
+        <div class="trigger">
+          <div class="if">If you see</div>
+          <h3>Same dispute already litigated</h3>
+          <p class="think">Think: claim or issue preclusion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flashcards">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 5</span>
+        <h2>Active recall flashcards</h2>
+        <p>
+          Civ Pro improves when you can identify the procedural box quickly.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="flashcard">
+          <small>Personal Jurisdiction</small>
+          <h3>What is the core due process idea behind personal jurisdiction?</h3>
+          <div class="answer">The defendant must have sufficient minimum contacts with the forum so that jurisdiction is fair and reasonable.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>General Jurisdiction</small>
+          <h3>Where is a corporation usually subject to general jurisdiction?</h3>
+          <div class="answer">Its place of incorporation and principal place of business.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Diversity</small>
+          <h3>What are the basic requirements for diversity jurisdiction?</h3>
+          <div class="answer">Complete diversity between plaintiffs and defendants and amount in controversy exceeding $75,000.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Erie</small>
+          <h3>What law generally applies in a federal diversity case?</h3>
+          <div class="answer">State substantive law and federal procedural law.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Summary Judgment</small>
+          <h3>When is summary judgment proper?</h3>
+          <div class="answer">When there is no genuine dispute of material fact and the movant is entitled to judgment as a matter of law.</div>
+        </div>
+
+        <div class="flashcard">
+          <small>Preclusion</small>
+          <h3>What is the difference between claim preclusion and issue preclusion?</h3>
+          <div class="answer">Claim preclusion bars relitigation of the same claim; issue preclusion bars relitigation of an actually litigated and necessarily decided issue.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="traps">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 6</span>
+        <h2>Common MBE traps</h2>
+        <p>
+          Civil Procedure questions love timing, waiver, and confusing similar procedural tools.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Jurisdiction traps</h3>
+          <ul>
+            <li><strong>Personal vs. subject matter jurisdiction:</strong> do not mix them.</li>
+            <li><strong>SMJ cannot be waived:</strong> parties cannot consent to federal subject matter jurisdiction.</li>
+            <li><strong>PJ can be waived:</strong> defendant must timely raise it.</li>
+            <li><strong>General jurisdiction is narrow:</strong> “at home” usually means domicile, incorporation, or principal place of business.</li>
+            <li><strong>Specific jurisdiction:</strong> claim must arise out of or relate to forum contacts.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Diversity and removal traps</h3>
+          <ul>
+            <li><strong>Complete diversity:</strong> every plaintiff must be diverse from every defendant.</li>
+            <li><strong>Amount in controversy:</strong> must exceed $75,000, not equal it.</li>
+            <li><strong>Citizenship:</strong> domicile matters for individuals.</li>
+            <li><strong>Removal:</strong> only defendants remove.</li>
+            <li><strong>Forum defendant rule:</strong> watch in diversity removal.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Pleading and motion traps</h3>
+          <ul>
+            <li><strong>12(b) defenses:</strong> some are waived if not raised early.</li>
+            <li><strong>Failure to state a claim:</strong> attacks legal sufficiency.</li>
+            <li><strong>Summary judgment:</strong> comes after evidence shows no genuine dispute of material fact.</li>
+            <li><strong>JMOL:</strong> trial-stage motion based on legally insufficient evidence.</li>
+            <li><strong>Amendments:</strong> relation back can matter for limitations problems.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Preclusion traps</h3>
+          <ul>
+            <li><strong>Claim preclusion:</strong> same claim, same parties or privies, final judgment on merits.</li>
+            <li><strong>Issue preclusion:</strong> issue actually litigated and necessarily decided.</li>
+            <li><strong>Default judgment:</strong> may support claim preclusion but often not issue preclusion.</li>
+            <li><strong>Nonmutual issue preclusion:</strong> watch who is using it and against whom.</li>
+            <li><strong>Final judgment:</strong> always check finality before applying preclusion.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="essay">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 7</span>
+        <h2>Essay framework</h2>
+        <p>
+          On a Civil Procedure essay, use headings. The grader should instantly see which procedural gate you are analyzing.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Civil Procedure essay order</h3>
+        <ol>
+          <li><strong>Jurisdiction:</strong> personal jurisdiction, subject matter jurisdiction, supplemental jurisdiction.</li>
+          <li><strong>Venue:</strong> proper venue, transfer, forum non conveniens.</li>
+          <li><strong>Erie:</strong> if federal court hears state law, decide substantive vs procedural law.</li>
+          <li><strong>Pleadings:</strong> complaint, answer, Rule 12 motions, amendments.</li>
+          <li><strong>Parties and claims:</strong> joinder, counterclaims, crossclaims, impleader, class actions.</li>
+          <li><strong>Discovery:</strong> scope, privilege, work product, sanctions.</li>
+          <li><strong>Motions:</strong> dismissal, summary judgment, JMOL, new trial.</li>
+          <li><strong>Judgment:</strong> finality, appeal, claim preclusion, issue preclusion.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Mini essay template</h3>
+        <p>
+          <strong>Issue:</strong> The issue is whether [court/procedure/action] is proper because [trigger fact].
+        </p>
+        <p>
+          <strong>Rule:</strong> State the procedural rule and any timing or waiver requirement.
+        </p>
+        <p>
+          <strong>Application:</strong> Apply the facts to each required element. If timing matters, say when the party acted.
+        </p>
+        <p>
+          <strong>Conclusion:</strong> Therefore, the court likely [may/may not] proceed, dismiss, transfer, decide, or preclude.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="memory">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 8</span>
+        <h2>Memory hooks</h2>
+        <p>
+          These handles keep Civ Pro from becoming a fog of rules.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Power → Place → Process → Preclusion</h3>
+          <p>
+            This is the master Civ Pro spine. Court power first, judgment consequences last.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Out-of-State = PJ</h3>
+          <p>
+            If the defendant is connected to another state, personal jurisdiction should fire.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Federal Court + State Law = Erie</h3>
+          <p>
+            If a federal diversity court applies state law, ask substantive or procedural.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>No Fact Dispute = Summary Judgment</h3>
+          <p>
+            If the facts are undisputed and law controls, think summary judgment.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Same Claim = Claim Preclusion</h3>
+          <p>
+            If the whole claim was or could have been litigated before, claim preclusion may bar it.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Same Issue = Issue Preclusion</h3>
+          <p>
+            If the exact issue was actually litigated and necessarily decided, issue preclusion may apply.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Module 9</span>
+        <h2>Quick quiz</h2>
+        <p>
+          Answer first. Then open the answer. Civ Pro sticks when you force the fact pattern into the right procedural box.
+        </p>
+      </div>
+
+      <div class="quiz">
+        <div class="quiz-card">
+          <h3>1. Defendant lives in State B but is sued in State A for conduct that occurred in State A. What issue?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Personal jurisdiction, especially specific jurisdiction. The claim appears to arise from the defendant’s contacts with State A.</p>
+          </details>
+        </div>
+
+        <div class="quiz-card">
+          <h3>2. Plaintiff from Delaware sues defendant from Pennsylvania in federal court for $80,000. What jurisdiction?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Diversity jurisdiction, assuming complete diversity and the amount in controversy exceeds $75,000.</p>
+          </details>
+        </div>
+
+        <div class="quiz-card">
+          <h3>3. Federal court hears a state negligence claim through diversity. State and federal law conflict. What doctrine?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Erie. The court must determine whether state substantive law or federal procedural law applies.</p>
+          </details>
+        </div>
+
+        <div class="quiz-card">
+          <h3>4. After discovery, no material facts are disputed and one party says the law entitles them to win. What motion?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Summary judgment. It is proper when there is no genuine dispute of material fact and the movant is entitled to judgment as a matter of law.</p>
+          </details>
+        </div>
+
+        <div class="quiz-card">
+          <h3>5. Same parties already litigated the same claim to final judgment. Plaintiff sues again. What doctrine?</h3>
+          <details>
+            <summary>Show answer</summary>
+            <p>Claim preclusion. It bars relitigation of the same claim between the same parties or their privies after a final judgment on the merits.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="premium">
+    <div class="container">
+      <div class="premium">
+        <div class="pill">Coming Soon</div>
+        <h2>Civil Procedure Flash Pack</h2>
+        <p>
+          The free page gives you the framework. The paid pack will be built for drilling:
+          jurisdiction flowcharts, Erie triggers, joinder maps, motion timing, and preclusion checklists.
+        </p>
+
+        <div class="premium-grid">
+          <div class="premium-item">100+ Civ Pro flashcards</div>
+          <div class="premium-item">Jurisdiction flowchart</div>
+          <div class="premium-item">Erie attack sheet</div>
+          <div class="premium-item">Preclusion checklist</div>
+        </div>
+
+        <p style="margin-top:20px; margin-bottom:0;">
+          Planned launch price: <strong>$1.99–$3.99</strong> for the first study pack.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="warning">
+        <strong>Important study disclaimer:</strong>
+        Flash The Law is an educational study supplement. It is not legal advice, not a law school course,
+        not a commercial bar prep replacement, and does not guarantee bar exam results. Always verify rules
+        with your bar prep provider, professor, jurisdiction, and official bar exam materials.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Next</span>
+        <h2>Keep building the library</h2>
+        <p>
+          Once this Civil Procedure format feels right, we can keep expanding across the rest of the bar subjects.
+        </p>
+      </div>
+
+      <div class="next-links">
+        <a class="next-link" href="index.html">← Back to Homepage</a>
+        <a class="next-link" href="contracts.html">Contracts Course</a>
+        <a class="next-link" href="evidence.html">Evidence Course</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>FlashTheLaw.com</strong> — Fast, focused bar exam review.</p>
+    <p>© <span id="year"></span> Flash The Law. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
